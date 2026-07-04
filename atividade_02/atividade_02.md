@@ -360,7 +360,7 @@ db.conteudos.insertMany([
   }
 ])
 ```
-
+![img1](/atividade_02/insercoes/3.png)
 ---
 
 ## 2.4 Inserir assinaturas
@@ -419,7 +419,7 @@ db.assinaturas.insertMany([
   }
 ])
 ```
-
+![img1](/atividade_02/insercoes/4.png)
 ---
 
 ## 2.5 Inserir avaliações
@@ -486,7 +486,7 @@ db.avaliacoes.insertMany([
   }
 ])
 ```
-
+![img1](/atividade_02/insercoes/5.png)
 ---
 
 ## 2.6 Inserir histórico de visualização
@@ -575,7 +575,7 @@ db.historico.insertMany([
   }
 ])
 ```
-
+![img1](/atividade_02/insercoes/6.png)
 ---
 
 # 3. Exercícios evolutivos
@@ -587,17 +587,27 @@ db.historico.insertMany([
 ### Exercício 1
 Liste todos os documentos da coleção `usuarios`.
 
+![img1](/atividade_02/atividade3/nivel1/1.png)
+
 ### Exercício 2
 Liste todos os documentos da coleção `conteudos`.
+
+![img1](/atividade_02/atividade3/nivel1/2.png)
 
 ### Exercício 3
 Liste todos os usuários da cidade de `Curitiba`.
 
+![img1](/atividade_02/atividade3/nivel1/3.png)
+
 ### Exercício 4
 Liste todos os conteúdos do tipo `filme`.
 
+![img1](/atividade_02/atividade3/nivel1/4.png)
+
 ### Exercício 5
 Busque o conteúdo cujo título é `Matrix`.
+
+![img1](/atividade_02/atividade3/nivel1/5.png)
 
 ### Exercício 6
 Insira um novo usuário na coleção `usuarios` com os campos:
@@ -609,6 +619,8 @@ Insira um novo usuário na coleção `usuarios` com os campos:
 - estado;
 - interesses;
 - ativo.
+
+![img1](/atividade_02/atividade3/nivel1/6.png)
 
 ### Exercício 7
 Insira um novo conteúdo do tipo `filme` com os campos:
@@ -622,26 +634,39 @@ Insira um novo conteúdo do tipo `filme` com os campos:
 - disponível.
 
 ---
+![img1](/atividade_02/atividade3/nivel1/7.png)
 
 ## Nível 2 — Operadores de comparação
 
 ### Exercício 8
 Liste os conteúdos com avaliação média maior que `9`.
 
+![img1](/atividade_02/atividade3/nivel2/8.png)
+
 ### Exercício 9
 Liste os usuários com idade maior que `30`.
+
+![img1](/atividade_02/atividade3/nivel2/9.png)
 
 ### Exercício 10
 Liste os conteúdos lançados antes do ano `2010`.
 
+![img1](/atividade_02/atividade3/nivel2/10.png)
+
 ### Exercício 11
 Liste os conteúdos lançados a partir de `2015`.
+
+![img1](/atividade_02/atividade3/nivel2/11.png)
 
 ### Exercício 12
 Liste os conteúdos cuja avaliação média seja menor ou igual a `8.8`.
 
+![img1](/atividade_02/atividade3/nivel2/12.png)
+
 ### Exercício 13
 Liste os usuários que não são do estado `PR`.
+
+![img1](/atividade_02/atividade3/nivel2/13.png)
 
 ---
 
@@ -650,14 +675,22 @@ Liste os usuários que não são do estado `PR`.
 ### Exercício 14
 Liste os conteúdos que possuem o gênero `Drama`.
 
+![img1](/atividade_02/atividade3/nivel3/14.png)
+
 ### Exercício 15
 Liste os conteúdos que possuem o gênero `Ficção Científica`.
+
+![img1](/atividade_02/atividade3/nivel3/15.png)
 
 ### Exercício 16
 Liste os conteúdos que possuem os gêneros `Drama` e `Crime` ao mesmo tempo.
 
+![img1](/atividade_02/atividade3/nivel3/16.png)
+
 ### Exercício 17
 Liste os usuários que possuem interesse em `Suspense`.
+
+![img1](/atividade_02/atividade3/nivel3/17.png)
 
 ### Exercício 18
 Liste os conteúdos que possuem pelo menos um dos seguintes gêneros:
@@ -665,8 +698,12 @@ Liste os conteúdos que possuem pelo menos um dos seguintes gêneros:
 - `Terror`
 - `Mistério`
 
+![img1](/atividade_02/atividade3/nivel3/18.png)
+
 ### Exercício 19
 Liste os conteúdos que não possuem o gênero `Comédia`.
+
+![img1](/atividade_02/atividade3/nivel3/19.png)
 
 ---
 
@@ -675,17 +712,27 @@ Liste os conteúdos que não possuem o gênero `Comédia`.
 ### Exercício 20
 Liste os conteúdos dirigidos por `Christopher Nolan`.
 
+![img1](/atividade_02/atividade3/nivel4/20.png)
+
 ### Exercício 21
 Liste os conteúdos cujo diretor é do `Reino Unido`.
+
+![img1](/atividade_02/atividade3/nivel4/21.png)
 
 ### Exercício 22
 Liste os usuários cujo bairro seja `Centro`.
 
+![img1](/atividade_02/atividade3/nivel4/22.png)
+
 ### Exercício 23
 Liste os usuários que possuem o campo `endereco`.
 
+![img1](/atividade_02/atividade3/nivel4/23.png)
+
 ### Exercício 24
 Liste os usuários que não possuem o campo `endereco`.
+
+![img1](/atividade_02/atividade3/nivel4/24.png)
 
 ---
 
@@ -694,17 +741,27 @@ Liste os usuários que não possuem o campo `endereco`.
 ### Exercício 25
 Atualize o usuário `Carlos Lima` para que o campo `ativo` passe a ser `true`.
 
+![img1](/atividade_02/atividade3/nivel5/25.png)
+
 ### Exercício 26
 Atualize o conteúdo `Cidade de Deus` para que o campo `disponivel` passe a ser `true`.
+
+![img1](/atividade_02/atividade3/nivel5/26.png)
 
 ### Exercício 27
 Adicione o campo `idiomaOriginal` ao filme `Matrix`, com o valor `Inglês`.
 
+![img1](/atividade_02/atividade3/nivel5/27.png)
+
 ### Exercício 28
 Adicione o campo `classificacao` ao filme `Interestelar`, com o valor `10+`.
 
+![img1](/atividade_02/atividade3/nivel5/28.png)
+
 ### Exercício 29
 Atualize a avaliação média de `Avatar` para `9.0`.
+
+![img1](/atividade_02/atividade3/nivel5/29.png)
 
 ---
 
@@ -713,20 +770,32 @@ Atualize a avaliação média de `Avatar` para `9.0`.
 ### Exercício 30
 Incremente em `1` a quantidade de visualizações do conteúdo `Matrix`.
 
+![img1](/atividade_02/atividade3/nivel6/30.png)
+
 ### Exercício 31
 Incremente em `1000` a quantidade de visualizações de todos os conteúdos disponíveis.
+
+![img1](/atividade_02/atividade3/nivel6/31.png)
 
 ### Exercício 32
 Adicione o gênero `Clássico` ao filme `Matrix`.
 
+![img1](/atividade_02/atividade3/nivel6/32.png)
+
 ### Exercício 33
 Remova o gênero `Clássico` do filme `Matrix`.
+
+![img1](/atividade_02/atividade3/nivel6/33.png)
 
 ### Exercício 34
 Remova o campo `telefone` da usuária `Beatriz Nunes`.
 
+![img1](/atividade_02/atividade3/nivel6/34.png)
+
 ### Exercício 35
 Adicione o benefício `sem anúncios` aos usuários do plano `Premium` na coleção `assinaturas`.
+
+![img1](/atividade_02/atividade3/nivel6/35.png)
 
 ---
 
@@ -735,17 +804,27 @@ Adicione o benefício `sem anúncios` aos usuários do plano `Premium` na coleç
 ### Exercício 36
 Liste os conteúdos que são filmes e possuem avaliação média maior que `9`.
 
+![img1](/atividade_02/atividade3/nivel7/36.png)
+
 ### Exercício 37
 Liste os usuários que são de `Curitiba` ou de `Maringá`.
+
+![img1](/atividade_02/atividade3/nivel7/37.png)
 
 ### Exercício 38
 Liste os conteúdos que são séries ou documentários.
 
+![img1](/atividade_02/atividade3/nivel7/38.png)
+
 ### Exercício 39
 Liste os conteúdos que possuem avaliação maior que `9` e visualizações acima de `2000000`.
 
+![img1](/atividade_02/atividade3/nivel7/39.png)
+
 ### Exercício 40
 Liste os usuários ativos com idade menor que `30`.
+
+![img1](/atividade_02/atividade3/nivel7/40.png)
 
 ---
 
@@ -754,14 +833,22 @@ Liste os usuários ativos com idade menor que `30`.
 ### Exercício 41
 Liste os conteúdos que possuem o campo `premios`.
 
+![img1](/atividade_02/atividade3/nivel8/41.png)
+
 ### Exercício 42
 Liste os conteúdos que não possuem o campo `diretor`.
+
+![img1](/atividade_02/atividade3/nivel8/42.png)
 
 ### Exercício 43
 Liste os usuários que possuem o campo `premium`.
 
+![img1](/atividade_02/atividade3/nivel8/43.png)
+
 ### Exercício 44
 Liste os conteúdos que possuem o campo `temporadas`.
+
+![img1](/atividade_02/atividade3/nivel8/44.png)
 
 ### Exercício 45
 Explique por que os documentos da coleção `conteudos` podem ter campos diferentes.
@@ -773,14 +860,22 @@ Explique por que os documentos da coleção `conteudos` podem ter campos diferen
 ### Exercício 46
 Remova o usuário que você criou no Exercício 6.
 
+![img1](/atividade_02/atividade3/nivel9/46.png)
+
 ### Exercício 47
 Remova o conteúdo que você criou no Exercício 7.
+
+![img1](/atividade_02/atividade3/nivel9/47.png)
 
 ### Exercício 48
 Remova todas as avaliações com nota menor que `8`.
 
+![img1](/atividade_02/atividade3/nivel9/48.png)
+
 ### Exercício 49
 Remova os registros de histórico cujo progresso seja menor que `40`.
+
+![img1](/atividade_02/atividade3/nivel9/49.png)
 
 ### Exercício 50
 Explique a diferença entre manter as informações separadas em várias coleções e armazenar tudo em um único documento.
