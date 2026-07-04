@@ -30,7 +30,7 @@ use("filmes")
 ```
 
 A coleção `filmes` será criada automaticamente quando os primeiros documentos forem inseridos.
-![img1](banco_dados_2_prova_2/atividade_01/atividade_01_img/img1.png)
+![img1](/atividade_01/atividade_01_img/img1.png)
 
 ---
 
@@ -104,6 +104,7 @@ db.filmes.insertMany([
   }
 ])
 ```
+![img1](/atividade_01/atividade_01_img/img2.png)
 
 ---
 
@@ -115,6 +116,7 @@ Liste todos os filmes cadastrados.
 ```javascript
 db.filmes.find()
 ```
+![img1](/atividade_01/atividade_01_img/img3.png)
 
 ## Exercício 2
 Busque apenas o filme `Matrix`.
@@ -122,6 +124,7 @@ Busque apenas o filme `Matrix`.
 ```javascript
 db.filmes.find({ titulo: "Matrix" })
 ```
+![img1](/atividade_01/atividade_01_img/img4.png)
 
 ## Exercício 3
 Liste apenas os filmes disponíveis.
@@ -129,6 +132,7 @@ Liste apenas os filmes disponíveis.
 ```javascript
 db.filmes.find({ disponivel: true })
 ```
+![img1](/atividade_01/atividade_01_img/img5.png)
 
 ## Exercício 4
 Busque o filme cujo título seja `Avatar`.
@@ -136,6 +140,7 @@ Busque o filme cujo título seja `Avatar`.
 ```javascript
 db.filmes.findOne({ titulo: "Avatar" })
 ```
+![img1](/atividade_01/atividade_01_img/img6.png)
 
 ---
 
@@ -165,6 +170,7 @@ db.filmes.insertOne({
   }
 })
 ```
+![img1](/atividade_01/atividade_01_img/img7.png)
 
 ## Exercício 6 — Read
 Consulte o filme inserido.
@@ -172,6 +178,7 @@ Consulte o filme inserido.
 ```javascript
 db.filmes.find({ titulo: "O Senhor dos Anéis" })
 ```
+![img1](/atividade_01/atividade_01_img/img10.png)
 
 ## Exercício 7 — Update
 Atualize a avaliação de `Avatar` para `9.0`.
@@ -182,6 +189,7 @@ db.filmes.updateOne(
   { $set: { avaliacao: 9.0 } }
 )
 ```
+![img1](/atividade_01/atividade_01_img/img8.png)
 
 ## Exercício 8 — Delete
 Remova o filme `O Senhor dos Anéis`.
@@ -189,3 +197,4 @@ Remova o filme `O Senhor dos Anéis`.
 ```javascript
 db.filmes.deleteOne({ titulo: "O Senhor dos Anéis" })
 ```
+![img1](/atividade_01/atividade_01_img/img9.png)
