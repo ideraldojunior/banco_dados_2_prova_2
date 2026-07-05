@@ -851,7 +851,8 @@ Liste os conteúdos que possuem o campo `temporadas`.
 ![img1](/atividade_02/atividade3/nivel8/44.png)
 
 ### Exercício 45
-Explique por que os documentos da coleção `conteudos` podem ter campos diferentes.
+Explique por que os documentos da coleção `conteudos` podem ter campos diferentes.  
+Isso ocorre porque o MongoDB é um banco de dados NoSQL com esquema dinâmico. Diferente de tabelas relacionais rígidas, as coleções no MongoDB não exigem que todos os documentos tenham exatamente a mesma estrutura. Isso oferece flexibilidade para armazenar, na mesma coleção, entidades similares com atributos únicos (por exemplo, séries têm temporadas, enquanto filmes tem o tempo de duração em minutos).
 
 ---
 
@@ -878,13 +879,27 @@ Remova os registros de histórico cujo progresso seja menor que `40`.
 ![img1](/atividade_02/atividade3/nivel9/49.png)
 
 ### Exercício 50
-Explique a diferença entre manter as informações separadas em várias coleções e armazenar tudo em um único documento.
+Explique a diferença entre manter as informações separadas em várias coleções e armazenar tudo em um único documento.  
+A diferença central está entre as abordagens de Normalização (Referências) e Desnormalização (Embutidos):
+- Separado em várias coleções: Evita a redundância e duplicação de dados, o que facilita a atualização (muda-se em um só lugar). Contudo, exige múltiplas consultas ou operações mais complexas (como $lookup) para juntar os dados na leitura.
+- Tudo em um único documento: Otimiza a velocidade de leitura, pois todas as informações necessárias vêm em uma única consulta ao banco, mas pode gerar duplicação de dados e aumentar consideravelmente o tamanho do documento.
 
 ### Exercício 51
-Explique uma vantagem e uma desvantagem de usar documentos aninhados no MongoDB.
+Explique uma vantagem e uma desvantagem de usar documentos aninhados no MongoDB.  
+- Vantagem: Desempenho de leitura e atomicidade. Você recupera a entidade principal e seus detalhes em uma única operação, e qualquer atualização nesse documento completo é tratada de forma atômica (tudo ou nada) pelo banco.
+- Desvantagem: Risco de crescimento descontrolado. Como os documentos do MongoDB possuem um limite rígido de tamanho (16 MB), embutir listas que crescem indefinidamente (como logs ou milhares de comentários) pode fazer com que o documento exceda esse limite e gere erros no sistema.
 
 ### Exercício 52
-Explique em quais situações seria melhor usar referência entre coleções.
+Explique em quais situações seria melhor usar referência entre coleções.  
+O uso de referências é a melhor escolha quando:
+- Existe um relacionamento "Muitos para Muitos" (N:N).
+- A entidade relacionada cresce de forma indefinida ou não tem limite claro (evitando o estouro dos 16 MB).
+- Os dados relacionados sofrem atualizações muito frequentes (evitando ter que atualizar múltiplos documentos desnormalizados).
+- As entidades frequentemente precisam ser consultadas de forma independente da entidade principal.
 
 ### Exercício 53
-Explique em quais situações seria melhor usar dados incorporados no mesmo documento.
+Explique em quais situações seria melhor usar dados incorporados no mesmo documento.  
+O uso de dados aninhados é a melhor escolha quando:
+- Existe um relacionamento "Um para Um" (1:1) ou "Um para Poucos" (1:N) onde a lista de itens tem um tamanho controlado e previsível.
+- Os dados são quase sempre consultados juntos na aplicação (ex: carregar as informações do filme e o nome do diretor simultaneamente).
+- Há uma forte dependência lógica: o dado aninhado não faz sentido ou não tem utilidade fora do contexto do documento pai (ex: o endereço residencial de um usuário).
